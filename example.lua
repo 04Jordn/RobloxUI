@@ -74,3 +74,10 @@ Section:Keybind({
         print("Keybind triggered, key:", key)
     end,
 })
+local UserInputService = game:GetService("UserInputService")
+
+UserInputService.InputBegan:Connect(function(input, gameProcessed)
+    if not gameProcessed and input.KeyCode == Enum.KeyCode.RightShift then
+        Library:Toggle()
+    end
+end)
