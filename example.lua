@@ -2,7 +2,7 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/04Jor
 -- To toggle the UI, you can call: Library:Toggle()
 
 local Window = Library:Window({
-    text = "Black & Purple UI"
+    text = "Hub"
 })
 
 local TabSection = Window:TabSection({
